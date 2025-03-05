@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+			crossorigin="anonymous"
+		/>
+		<script src="https://kit.fontawesome.com/9ebe9143c6.js" crossorigin="anonymous"></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+			crossorigin="anonymous"
+		></script>
+
+		<link rel="stylesheet" href="styles.css" />
+		<title>Bootstrap</title>
+	</head>
+
+	<body>
+		<nav class="navbar mio bg-light">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="Instagram">
+					<i class="fa-brands fa-instagram"></i>
+					<strong>Instagram</strong>
+				</a>
+				<button type="button" class="btn btn-success miboton0" data-bs-toggle="modal" data-bs-target="#exampleModal">
+					Create a new post
+				</button>
+
+				<div class="dropdown">
+					<button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+						<i class="fa-solid fa-gear"></i>
+					</button>
+
+					<ul class="dropdown-menu dropdown-menu-white">
+						<li><a class="dropdown-item" href="#">Profile</a></li>
+						<li><a class="dropdown-item" href="#">Accesibility</a></li>
+						<li><a class="dropdown-item" href="#">Privacy and Data</a></li>
+						<li><hr class="dropdown-divider" /></li>
+						<li><a class="dropdown-item" href="Log">Log out</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<ul class="nav nav-pills mb-3" id="pills-tab" role="tablist" style="margin-top: 4rem">
+			<li class="nav-item" role="presentation">
+				<button
+					class="nav-link"
+					id="pills-home-tab"
+					data-bs-toggle="pill"
+					data-bs-target="#pills-home"
+					type="button"
+					role="tab"
+					aria-controls="pills-home"
+					aria-selected="true"
+					href="photos"
+				>
+					<i class="fa-solid fa-table-cells"></i>
+				</button>
+			</li>
+			<li class="nav-item" role="presentation">
+				<button
+					class="nav-link active"
+					id="pills-profile-tab"
+					data-bs-toggle="pill"
+					data-bs-target="#pills-profile"
+					type="button"
+					role="tab"
+					aria-controls="pills-profile"
+					aria-selected="false"
+					href="#feed"
+				>
+					<i class="fa-solid fa-square"></i>
+				</button>
+			</li>
+		</ul>
+		<div class="tab-content" id="pills-tabContent">
+			<div class="tab-pane fade" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
+				<div id="photos" class="container second">
+					<div class="container mt-5">
+						<div class="row">
+							<div class="col-12 col-sm-4 p-2">
+								<img
+									src="https://pbs.twimg.com/profile_images/1593277535537733632/MtK-lAoz_400x400.jpg"
+									class="img-fluid grid-image"
+									alt="Imagen 1"
+								/>
+							</div>
+							<div class="col-12 col-sm-4 p-2">
+								<img
+									src="https://www.corredordepropiedades.cl/wp-content/uploads/2021/01/students-boys-girls-scaled.jpg"
+									class="img-fluid grid-image"
+								/>
+							</div>
+							<div class="col-12 col-sm-4 p-2">
+								<img
+									src="https://media.tacdn.com/media/attractions-splice-spp-360x240/06/6f/7a/ad.jpg"
+									class="img-fluid grid-image"
+								/>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col-12 col-sm-4 p-2">
+								<img
+									src="https://images.squarespace-cdn.com/content/v1/5bb25d58f4e5317de7773f34/1618869335672-5PICL1RG5RHBYTDJIZKZ/Smiling+Lady+Tank+Top.jpg"
+									class="img-fluid grid-image"
+								/>
+							</div>
+							<div class="col-12 col-sm-4 p-2">
+								<img
+									src="https://media.licdn.com/dms/image/v2/C5103AQEuvlYM_hoofA/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1517509633082?e=2147483647&v=beta&t=EBuJfybC69xsSK3I12571l_KZcf4wA7N5M50bg4lE7w"
+									class="img-fluid grid-image"
+								/>
+							</div>
+							<div class="col-12 col-sm-4 p-2">
+								<img
+									src="https://assets.goal.com/images/v3/blt196a88a65547c7b5/4aff02ef127454a6a693508299af4f398b878a1f.jpg"
+									class="img-fluid grid-image"
+								/>
+							</div>
+						</div>
+
+						<!-- Fila 3 -->
+						<div class="row">
+							<div class="col-12 col-sm-4 p-2">
+								<img
+									src="https://www.nationaljewish.org/NJH/files/e4/e4417a1e-ed6f-4c1c-8e89-9320ecbab1c5.jpg"
+									class="img-fluid grid-image"
+								/>
+							</div>
+							<div class="col-12 col-sm-4 p-2">
+								<img
+									src="https://media2.dev.to/dynamic/image/width=1080,height=1080,fit=cover,gravity=auto,format=auto/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/q7whfkneyy9zhoq7qi45.jpg"
+									class="img-fluid grid-image"
+								/>
+							</div>
+							<div class="col-12 col-sm-4 p-2">
+								<img
+									src="https://www.insidehighered.com/sites/default/files/styles/max_650x650/public/media/iStock_76892785_MEDIUM.jpg?itok=YXl0mViu"
+									class="img-fluid grid-image"
+								/>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="tab-pane fade show active" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+				<div id="feed" class="grid-container">
+					<div class="post-container1">
+						<div class="up">
+							<span class="titulo">My Crazy Dog Spark!</span>
+							<span class="numeros">08/26</span>
+						</div>
+
+						<div class="image1">
+							<img src="https://m.media-amazon.com/images/I/61D9stg3wjL._AC_UF350,350_QL80_.jpg" />
+						</div>
+
+						<div class="down">
+							<div class="texto"><strong>204 Likes</strong></div>
+
+							<div class="texto2"><p>This is an example of a very good photo that you can post on instagram.</p></div>
+						</div>
+					</div>
+
+					<div class="post-container2">
+						<div class="up2">
+							<span class="titulo">The greatness of Croatia</span>
+							<span class="numeros">04/09</span>
+						</div>
+
+						<div class="image2"><img src="https://media.tacdn.com/media/attractions-splice-spp-360x240/06/6f/7a/ad.jpg" /></div>
+
+						<div class="down2">
+							<div class="texto"><strong>26985 Likes</strong></div>
+
+							<div class="texto2"><p>This is an example of a very good photo that you can post on instagram.</p></div>
+						</div>
+					</div>
+				</div>
+				<div class="post-container2">
+					<div class="up2">
+						<span class="titulo">Amazing GOAL by Cristiano!</span>
+						<span class="numeros">06/10</span>
+					</div>
+
+					<div class="image3">
+						<img
+							src="https://img.asmedia.epimg.net/resizer/v2/QMRGO3OJT5KIZDVANYKMPSSIQQ.jpg?auth=1823c7fa87735a45f91b4e51fd8293b9bf0a40c6c1a79f2b0823110c7627269b&width=360"
+						/>
+					</div>
+
+					<div class="down2">
+						<div class="texto"><strong>204 Likes</strong></div>
+
+						<div class="texto2"><p>This is an example of a very good photo that you can post on instagram.</p></div>
+					</div>
+				</div>
+			</div>
+
+			<div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab" tabindex="0"></div>
+			<div class="tab-pane fade" id="pills-disabled" role="tabpanel" aria-labelledby="pills-disabled-tab" tabindex="0"></div>
+		</div>
+
+		<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="exampleModalLabel">Create a new post</h5>
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+					</div>
+
+					<div class="modal-body">
+						Caption:
+						<textarea class="form-control" placeholder="Add the caption of your post here" rows="2"></textarea>
+						<button type="button" class="btn btn-secondary miboton"><i class="fa-solid fa-camera"></i></button>
+						<button type="button" class="btn btn-secondary miboton1"><i class="fa-solid fa-location-dot"></i></button>
+					</div>
+
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+						<button type="button" class="btn btn-success">Publish</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
